@@ -1,9 +1,9 @@
 const express = require('express')
 
 const userRouter = express.Router()
-const Users = require('./../model/user.Model')
+const Users = require('./../model/user.model')
 const registrationValidator = require('../Helpers/registratoinValidation')
-const clientValidation = require('./../utils/clientValidation')
+const clientValidation = require('../utils/clientValidation')
 const validationError = require('./../utils/mongooseValidationError')
 const guestUserAccess = require('./../middlewares/guestUsers.Middleware')
 const loginUserAccess = require('./../middlewares/LogginUsers.Middleware')
