@@ -16,7 +16,5 @@ userRouter.route('/login').post(loginUserAccess, passportLogin, login
 )
 userRouter.route('/logout').get(logout)
 userRouter.route('/users').get(guestUserAccess, users)
-userRouter.route('/profile/:userID').get(guestUserAccess, profile)
-userRouter.route('/delete/:userID').delete(guestUserAccess, removeUser)
 
 module.exports = userRouter
