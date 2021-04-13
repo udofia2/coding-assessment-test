@@ -3,7 +3,7 @@ const Joi = require('joi')
 const registrationSchema = Joi.object({
     name: Joi.string()
       .trim()
-      .alphanum()
+      // .alphanum()
       .min(2)
       .max(128)
       .required(),

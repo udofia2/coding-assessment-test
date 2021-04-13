@@ -28,6 +28,9 @@ app.use(session({
 app.use(passport.initialize())
 app.use(passport.session())
 
+require('./Helpers/userLogin.Strategy')
+
+app.use('/', require('./routes/users.route'))
 
 app.use((req, res, next) => {
   res.status(404).send('Sorry, cant find the that')

@@ -4,7 +4,7 @@ const Home = (Users, registrationValidator, clientValidation, validationError) =
 
     try {
 
-      if (!req.user) return res.json('Hello Guess, You are on the HOME PAGE')
+      if (!req.user) return res.json('Hello Guess, You are on the HOME PAGE. You are seeing this because you are not logged in. Please /register or /login to see your profile with a different greeting')
 
       res.json(`welcome ${req.user.name}, You are loggedin and on the home page`)
 
@@ -89,6 +89,8 @@ const Home = (Users, registrationValidator, clientValidation, validationError) =
   }
 
   const login = async (req, res) => {
+    console.log('hi from users')
+
     const {
       email,
       password
@@ -108,6 +110,21 @@ const Home = (Users, registrationValidator, clientValidation, validationError) =
     res.json(user)
   }
 
+  const profile = async (req, res) => {
+
+    try {
+
+      const user = await Users.findOne({
+        _id: req.params.userID
+      })
+
+      res.status(200).json(`Welcome ${user.name}. What would you like to do today?`)
+
+    } catch (err) {
+
+      console.log(err)
+    }
+  }
 
   const logout = async (req, res) => {
     req.logout();
@@ -115,9 +132,11 @@ const Home = (Users, registrationValidator, clientValidation, validationError) =
   }
 
   return {
+    home,
     users,
     registration,
     login,
+    profile,
     logout
   }
 }
