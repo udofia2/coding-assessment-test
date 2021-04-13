@@ -1,5 +1,19 @@
 const Home = (Users, registrationValidator, clientValidation, validationError) => {
 
+  const home = (req, res) => {
+
+    try {
+
+      if (!req.user) return res.json('Hello Guess, You are on the HOME PAGE')
+
+      res.json(`welcome ${req.user.name}, You are loggedin and on the home page`)
+
+    } catch (err) {
+      console.log(err)
+    }
+  }
+
+
   const users = async (req, res) => {
 
     try {

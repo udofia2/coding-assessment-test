@@ -7,7 +7,7 @@ const clientValidation = require('../utils/clientValidation')
 const validationError = require('./../utils/mongooseValidationError')
 const guestUserAccess = require('../middlewares/guestUsers.middleware')
 const loginUserAccess = require('../middlewares/LogginUsers.middleware')
-const { registration, login, logout, users } = require('./../controller/user.controller')(Users, registrationValidator, clientValidation, validationError)
+const { home, registration, login, logout, users } = require('./../controller/user.controller')(Users, registrationValidator, clientValidation, validationError)
 const passportLogin = require('../middlewares/userLogin.Passport')
 
 userRouter.route('/').get(home)
