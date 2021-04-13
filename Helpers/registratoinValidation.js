@@ -1,9 +1,9 @@
 const Joi = require('joi')
 
+//Form input validation
 const registrationSchema = Joi.object({
     name: Joi.string()
       .trim()
-      // .alphanum()
       .min(2)
       .max(128)
       .required(),

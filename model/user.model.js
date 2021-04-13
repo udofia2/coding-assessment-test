@@ -4,6 +4,7 @@ const {
   Schema
 } = mongoose
 
+//Schema model for a new user registration
 const User = new Schema({
   name: {
     type: String,

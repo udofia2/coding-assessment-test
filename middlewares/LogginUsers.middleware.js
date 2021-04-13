@@ -1,3 +1,4 @@
+//logged in user check
 const loginUserAccess = (req, res, next) => {
   if(!req.isAuthenticated()) return next()
 

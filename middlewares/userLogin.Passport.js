@@ -1,5 +1,6 @@
 const passport = require('passport')
 
+//logged in user verification with passport
 const passportLogin = async (req, res, next) => {
   passport.authenticate('local', async (err, user, info) => {
     if (err) return next(err);

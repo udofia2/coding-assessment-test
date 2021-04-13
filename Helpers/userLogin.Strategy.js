@@ -4,6 +4,7 @@ const passport = require('passport'),
 
 const Users = require('../model/user.model')
 
+//passport login strategy
 passport.use(new LocalStrategy({
     usernameField: 'email'
   },
