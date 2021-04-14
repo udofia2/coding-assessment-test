@@ -1,7 +1,12 @@
+
 # Nodejs Coding Assessment Test
 
-[![PATRICIA][product-screenshot]](./patricia.png)
-
+<br />
+<p align="center">
+  <a https://mypatricia.co/">
+    <img src="./patricia.png" alt="Logo">
+  </a>
+</p>
 Nodejs is used to create API endpoints that allow users do the following;
 
 - Login
@@ -121,11 +126,11 @@ Project Link: [https://github.com/udofia2/coding-assessment-test](https://github
 
 
 ## ScreenShoots
-[demo]: (./screenshots/failed_login.png)
-(./screenshots/guess_home_route.png)
-(./screenshots/login_user_route.png)
-(./screenshots/logout_permission.png)
-(./screenshots/successful_login.png)
-(./screenshots/successful_registration.png)
-(./screenshots/users_route_available_on_login.png)
-(./screenshots/users_unavailable_to_guess.png)
+![Alt text](./screenshots/failed_login.png)
+![Alt text](./screenshots/guess_home_route.png)
+![Alt text](./screenshots/login_user_route.png)
+![Alt text](./screenshots/logout_permission.png)
+![Alt text](./screenshots/successful_login.png)
+![Alt text](./screenshots/successful_registration.png)
+![Alt text](./screenshots/users_route_available_on_login.png)
+![Alt text](./screenshots/users_unavailable_to_guess.png)
