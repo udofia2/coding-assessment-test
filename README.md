@@ -121,11 +121,11 @@ Project Link: [https://github.com/udofia2/coding-assessment-test](https://github
 
 
 ## ScreenShoots
-[product-screenshot]: ./screenshots/failed_login.png
-./screenshots/guess_home_route.png
-./screenshots/login_user_route.png
-./screenshots/logout_permission.png
-./screenshots/successful_login.png
-./screenshots/successful_registration.png
-./screenshots/users_route_available_on_login.png
-./screenshots/users_unavailable_to_guess.png
+[demo]: (./screenshots/failed_login.png)
+(./screenshots/guess_home_route.png)
+(./screenshots/login_user_route.png)
+(./screenshots/logout_permission.png)
+(./screenshots/successful_login.png)
+(./screenshots/successful_registration.png)
+(./screenshots/users_route_available_on_login.png)
+(./screenshots/users_unavailable_to_guess.png)
