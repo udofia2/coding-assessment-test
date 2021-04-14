@@ -12,7 +12,7 @@ const registrationSchema = Joi.object({
       .pattern(new RegExp('^[a-zA-Z0-9]{3,30}$'))
       .required(),
 
-    repeat_password: Joi.ref('password'),
+    /*repeat_password: Joi.ref('password'),*/
 
     email: Joi.string()
       .trim()
@@ -25,7 +25,7 @@ const registrationSchema = Joi.object({
       })
       .required()
   })
-  .with('password', 'repeat_password')
+  // .with('password', 'repeat_password')
 
 
 module.exports = registrationSchema
