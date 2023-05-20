@@ -1,0 +1,15 @@
+title: model1
+x-stoplight:
+  id: w0oamxwyloh94
+x-tags:
+  - M1
+type: object
+properties:
+  id:
+    type: string
+    x-stoplight:
+      id: hw4cbf3w9dvq4
+  email:
+    type: string
+    x-stoplight:
+      id: jk5pcsp7ocsqi
